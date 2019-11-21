@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 ELASTIC_APM = {
     'SERVICE_NAME': 'my-app', 
     'SERVER_URL': 'http://apm-server:7200', # host e porta do apm-server
+    'DJANGO_TRANSACTION_NAME_FROM_ROUTE': True,  # parâmetro opcional para utilizar a rota do endpoint no APM
     'DEBUG': True, # True para monitorar o Django quando o debug_mode estiver ligado
 }
 
